@@ -50,7 +50,24 @@ class TaskManager {
         this.tasks.push(task);
     }
     deleteTask() {
-        return this.tasks
+        // return this.tasks
+        let event = window.event.target
+        let taskID = event.parentNode.parentNode.parentNode.parentNode.attributes.id.value
+
+        console.log(taskID)
+        console.log(this.tasks.ID)
+        let deletedTask = document.getElementById(taskID)
+        deletedTask.remove()
+
+        for (x in this.tasks){
+            console.log(this.tasks[x].ID)
+        }
+        
+        
+
+        
+
+        console.log("itworkssss")
     }
     updateTaskStatus() {
         return this.tasks
@@ -60,37 +77,10 @@ class TaskManager {
 let tm = new TaskManager();
 
 
-// let newTask = {
-//     "ID": id,
-//     "Name": assignedBy,
-//     "Description": description,
-//     "AssignedTo": assignedTo,
-//     "DueDate": dueDate,
-//     "Status": status,
-
-// }
 
 
-
-// document.querySelector("#addTask").addEventListener("click", function(){
-//     if (validateForm()==true){
-//         let id = taskList.length + 1
-//         let assignedBy = document.querySelector("#name").value;
-//         let description = document.querySelector("#description").value;
-//         let assignedTo = document.querySelector("#assignedto").value;
-//         let dueDate = document.querySelector("#datepicker").value;
-//         let status = document.querySelector("#status").value;
-    
-//         createTask(id, assignedBy, description, assignedTo, dueDate, status)
-//         display()
-
-//     }
-  
-
-// })
-
-
-        //
+//Task 4 Part 1
+        
 document.querySelector("#addTask").addEventListener("click", function(){
     if (validateForm()==true){
         let id = tm.tasks.length + 1
@@ -111,6 +101,12 @@ document.querySelector("#addTask").addEventListener("click", function(){
   
 
 })
+
+// document.querySelector("#delete").addEventListener("click", function(){
+//     let deletedCard = document.getElementById("delete")
+//     deletedCard.innerHTML = ""
+// })
+
 
 function createTask(id, assignedBy, description, assignedTo, dueDate, status){
     let newTask = {
@@ -135,10 +131,11 @@ function display(){
     fara.innerHTML =  ""
     
     for (i in tm.tasks){
-        let taskHTML = `<div class="col-10 col-md-6 col-lg-3">
+        let taskHTML = 
+    `<div class="col-10 col-md-6 col-lg-3" id="${tm.tasks[i]["ID"]}">
 
 
-        <div class="card" style="width: 18rem;">
+        <div class="card"  style="width: 18rem;">
             <div class="card-header">
                 Task ${tm.tasks[i]["ID"]}
             </div>
@@ -183,9 +180,17 @@ function display(){
                     <p class="mb-1"></p>
                     <small class="text-muted"></small>
                 </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                                <button type="button" class="btn btn-primary" id="delete" onclick="tm.deleteTask()">
+                                    <span class="btn-label"><i class="fa fa-trash"></i></span> Delete
+                                </button>
+                                <button type="button" class="btn btn-primary" id="update">
+                                    <span class="btn-label"><i class="fa fa-edit"></i></span> Update
+                                </button>
+                </a>
             </div>
         </div>
-        </div>`
+    </div>`
     fara.innerHTML += taskHTML
     }
 } 

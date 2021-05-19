@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
        
         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link
         rel="stylesheet" href="style.css">
@@ -15,20 +16,20 @@
         <h1>To Do App</h1>
 
         <form name="myForm">
-            <div class="container-fluid row justify-content-center">
+            <div class="container-fluid row justify-content-center" id="formSection">
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" name="fname" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name of the person creating task">
+                        <input type="text" name="fname" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name of the person creating task" required>
                         <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <input type="text" name="description" class="form-control" id="description" placeholder="E.g. Email senior management with final report">
+                        <input type="text" name="description" class="form-control" id="description" placeholder="E.g. Email senior management with final report" required>
                     </div>
                     <div class="form-group">
                         <label for="assignedto">Assigned To</label>
-                        <input type="text" name="assignedto" class="form-control" id="assignedto" placeholder="Farana Jivan">
+                        <input type="text" name="assignedto" class="form-control" id="assignedto" placeholder="Farana Jivan" required>
                     </div>
                     <div class="form-group">
                         <label for="datepicker">Due Date</label>
@@ -115,10 +116,10 @@
         <div class="container" id="page">
             <div class="row" id="taskout" style="border: 1px solid black;">
                 <br><br><br><br><br><br>
-                <!-- <div class="col-10 col-md-6 col-lg-3">
+                <!-- <div class="col-10 col-md-6 col-lg-3"> -->
 
 
-                    <div class="card" style="width: 18rem;">
+                    <!-- <div class="card" style="width: 18rem;">
                         <div class="card-header">
                             Task 
                         </div>
@@ -162,6 +163,14 @@
                                 </div>
                                 <p class="mb-1"></p>
                                 <small class="text-muted"></small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <button type="button" class="btn btn-primary" id="delete">
+                                    <span class="btn-label"><i class="fa fa-trash"></i></span> Delete
+                                </button>
+                                <button type="button" class="btn btn-primary" id="update">
+                                    <span class="btn-label"><i class="fa fa-edit"></i></span> Update
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -372,11 +381,11 @@
                             </a>
                         </div>
                     </div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
 
 
-            </div>
+            <!-- </div> -->
 
         </div>
         <script src="app.js"></script>
