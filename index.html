@@ -3,13 +3,13 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link
-        rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Hello, world!</title>
     </head>
     <body>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group">
                         <label for="datepicker">Due Date</label>
-                        <input type="date" name="duedate"class="form-control" id="datepicker" placeholder="dd/mm/yyyy">
+                        <input type="date" name="duedate" class="form-control" id="datepicker" placeholder="dd/mm/yyyy">
                     </div>
                     <div class="form-group">
                         <label for="status">Status</label>
@@ -48,346 +48,334 @@
                     </div>
 
 
-                    <button type="button"   class="btn btn-primary" id="addTask"  >Add Item</button>
+                    <button type="button" class="btn btn-primary" id="addTask">Add Item</button>
                 </form>
             </div>
         </div>
-            <!--Task 3-->
-            <h2>Summary List</h2>   
-            <br>
-            <div class="container-fluid row justify-content-center">
-                <div class="col-md-4">
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action ">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Task for Fiza</h5>
-                <small>Due 21-05-2021</small>
-              </div>
-              <p class="mb-1">To Do</p>
-              <small></small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Task for Fara</h5>
-                <small class="text-muted">25-05-2021</small>
-              </div>
-              <p class="mb-1">To do</p>
-              <small class="text-muted"></small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Task for Ruchita</h5>
-                <small class="text-muted">29-05-2021</small>
-              </div>
-              <p class="mb-1">To Do</p>
-              <small class="text-muted"></small>
-            </a>
-          </div>
-          <a href="#" class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Task for Noreen</h5>
-              <small class="text-muted">29-05-2021</small>
-            </div>
-            <p class="mb-1">To Do</p>
-            <small class="text-muted"></small>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Task for Smarty</h5>
-              <small class="text-muted">29-05-2021</small>
-            </div>
-            <p class="mb-1">To Do</p>
-            <small class="text-muted"></small>
-          </a>
-        </div>
-        
-        
-        
-        
+        <!--Task 3-->
+        <h2>Summary List</h2>
+        <br>
+        <div class="container-fluid row justify-content-center">
+            <div class="col-md-4">
+                <div class="list-group" id="taskSummaryOut">
+                    <!-- <a href="#" class="list-group-item list-group-item-action ">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Task for Fiza</h5>
+                                    <small>Due 21-05-2021</small>
+                                  </div>
+                                  <p class="mb-1">To Do</p>
+                                  <small></small>
+                                </a> -->
+                    <!-- <a href="#" class="list-group-item list-group-item-action">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Task for Fara</h5>
+                                    <small class="text-muted">25-05-2021</small>
+                                  </div>
+                                  <p class="mb-1">To do</p>
+                                  <small class="text-muted"></small>
+                                </a> -->
+                    <!-- <a href="#" class="list-group-item list-group-item-action">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Task for Ruchita</h5>
+                                    <small class="text-muted">29-05-2021</small>
+                                  </div>
+                                  <p class="mb-1">To Do</p>
+                                  <small class="text-muted"></small>
+                                </a> -->
+                    <!-- <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">Task for Noreen</h5>
+                                  <small class="text-muted">29-05-2021</small>
+                                </div>
+                                <p class="mb-1">To Do</p>
+                                <small class="text-muted"></small>
+                              </a> -->
+                    <!-- <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">Task for Smarty</h5>
+                                  <small class="text-muted">29-05-2021</small>
+                                </div>
+                                <p class="mb-1">To Do</p>
+                                <small class="text-muted"></small>
+                              </a> -->
+
+                </div>
             </div>
         </div>
-
-
-
-        <!-- Task 2 -->
-
-        <h3>Current Tasks</h3>
-
-        <div class="container" id="page">
-            <div class="row" id="taskout" style="border: 1px solid black;">
-                <br><br><br><br><br><br>
-                <!-- <div class="col-10 col-md-6 col-lg-3"> -->
-
-
-                    <!-- <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            Task 
-                        </div>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned to:</h5>
-                                    <small>3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small>Fiza</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned By:</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">Farana</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Due Date</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">21/05/2021</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Status:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <button type="button" class="btn btn-primary" id="delete">
-                                    <span class="btn-label"><i class="fa fa-trash"></i></span> Delete
-                                </button>
-                                <button type="button" class="btn btn-primary" id="update">
-                                    <span class="btn-label"><i class="fa fa-edit"></i></span> Update
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-10 col-md-6 col-lg-3">
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            Task 2
-                        </div>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned to:</h5>
-                                    <small>3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small>Fiza</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned By:</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">Farana</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Due Date</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">21/05/2021</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Status:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-10 col-md-6 col-lg-3">
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            Task 3
-                        </div>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned to:</h5>
-                                    <small>3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small>Fiza</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned By:</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">Farana</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Due Date</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">21/05/2021</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Status:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-md-6 col-lg-3">
-
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            Task 4
-                        </div>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned to:</h5>
-                                    <small>3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small>Fiza</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned By:</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">Farana</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Due Date</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">21/05/2021</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Status:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-10 col-md-6 col-lg-3">
-
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            Task 5
-                        </div>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned to:</h5>
-                                    <small>3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small>Fiza</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Assigned By:</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">Farana</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Due Date</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted">21/05/2021</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Status:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description:</h5>
-                                    <small class="text-muted"></small>
-                                </div>
-                                <p class="mb-1"></p>
-                                <small class="text-muted"></small>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <!-- </div> -->
-
-        </div>
-        <script src="app.js"></script>
     </body>
-</html></div></div></div></div></div><!-- Optional JavaScript --><!-- jQuery first, then Popper.js, then Bootstrap JS --><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body></html>
+</html></div><!-- Task 2 --><h3>Current Tasks</h3><div class="container" id="page">
+<div class="row" id="taskout" style="border: 1px solid black;">
+    <br><br><br><br><br><br>
+<!-- <div class="col-10 col-md-6 col-lg-3"> -->
+
+
+    <!-- <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                Task 
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action active">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned to:</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small>Fiza</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned By:</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">Farana</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Due Date</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">21/05/2021</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Status:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <button type="button" class="btn btn-primary" id="delete">
+                                        <span class="btn-label"><i class="fa fa-trash"></i></span> Delete
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="update">
+                                        <span class="btn-label"><i class="fa fa-edit"></i></span> Update
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-10 col-md-6 col-lg-3">
+    
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                Task 2
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action active">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned to:</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small>Fiza</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned By:</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">Farana</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Due Date</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">21/05/2021</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Status:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-10 col-md-6 col-lg-3">
+    
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                Task 3
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action active">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned to:</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small>Fiza</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned By:</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">Farana</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Due Date</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">21/05/2021</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Status:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-6 col-lg-3">
+    
+    
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                Task 4
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action active">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned to:</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small>Fiza</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned By:</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">Farana</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Due Date</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">21/05/2021</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Status:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-10 col-md-6 col-lg-3">
+    
+    
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                Task 5
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action active">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned to:</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small>Fiza</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Assigned By:</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">Farana</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Due Date</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted">21/05/2021</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Status:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description:</h5>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+    <!-- </div> -->
+
+</div>
+<script src="app.js"></script></body></html></div></div></div></div></div><!-- Optional JavaScript --><!-- jQuery first, then Popper.js, then Bootstrap JS --><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body></html>

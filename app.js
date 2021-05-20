@@ -56,10 +56,14 @@ class TaskManager {
 
         console.log(taskID)
         console.log(this.tasks.ID)
-        let deletedTask = document.getElementById(taskID)
-        deletedTask.remove()
+       
             
             let x = 0
+            while (x<2) {
+                let deletedTask = document.getElementById(taskID)
+                deletedTask.remove()
+                
+            }
         for (x in this.tasks){
             console.log(this.tasks[x].ID)
             
@@ -144,8 +148,8 @@ function createTask( assignedBy, description, assignedTo, dueDate, status){
 console.log("This is the script running")
 function display(){
     console.log("display function running")
-    let fara = document.querySelector("#taskout")
-    fara.innerHTML =  ""
+    let card = document.querySelector("#taskout")
+    card.innerHTML =  ""
     
     for (i in tm.tasks){
         let taskHTML = 
@@ -208,12 +212,24 @@ function display(){
             </div>
         </div>
     </div>`
-    fara.innerHTML += taskHTML
-    let fara = document.querySelector("#taskout")
-    fara.innerHTML =  ""
+    card.innerHTML += taskHTML
+    
+    
+    // This is summary //
+    let summary = document.querySelector("#taskSummaryOut")
+    summary.innerHTML =  ""
     
     for (i in tm.tasks){
-        let taskHTML = 
+        let summaryHTML = ` <a href="#" class="list-group-item list-group-item-action " id="${tm.tasks[i]["ID"]}">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Task for ${tm.tasks[i]["AssignedTo"]}</h5>
+          <small>Due ${tm.tasks[i]["DueDate"]}</small>
+        </div>
+        <p class="mb-1">${tm.tasks[i]["Status"]}</p>
+        <small></small>
+      </a>`
+      summary.innerHTML += summaryHTML
+        }
     }
     
 } 
