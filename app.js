@@ -41,7 +41,7 @@ datepicker.min = new Date().toISOString().split("T")[0];
 class TaskManager {
     constructor() {
         this.tasks = []
-
+        this.nextTaskID = 1
     }
     getTasks() {
         return this.tasks
@@ -58,14 +58,23 @@ class TaskManager {
         console.log(this.tasks.ID)
         let deletedTask = document.getElementById(taskID)
         deletedTask.remove()
-
+            
+            let x = 0
         for (x in this.tasks){
             console.log(this.tasks[x].ID)
+            
+            if (this.tasks[x].ID==taskID){
+            this.tasks.splice(x,1)
+            console.log(this.tasks)
+        } else {
+            console.log("taskNotPresent")
+        }
+        
         }
         
         
+         
 
-        
 
         console.log("itworkssss")
     }
@@ -83,14 +92,14 @@ let tm = new TaskManager();
         
 document.querySelector("#addTask").addEventListener("click", function(){
     if (validateForm()==true){
-        let id = tm.tasks.length + 1
+        // let id = tm.tasks.length + 1
         let assignedBy = document.querySelector("#name").value;
         let description = document.querySelector("#description").value;
         let assignedTo = document.querySelector("#assignedto").value;
         let dueDate = document.querySelector("#datepicker").value;
         let status = document.querySelector("#status").value;
 
-        let newTask = createTask(id, assignedBy, description, assignedTo, dueDate, status)
+        let newTask = createTask( assignedBy, description, assignedTo, dueDate, status)
         tm.addTask(newTask)
         console.log('current tasks:', tm.getTasks())
 
@@ -108,7 +117,15 @@ document.querySelector("#addTask").addEventListener("click", function(){
 // })
 
 
-function createTask(id, assignedBy, description, assignedTo, dueDate, status){
+function createTask( assignedBy, description, assignedTo, dueDate, status){
+    let id = 0
+    if (tm.tasks.length == 0) {
+        id = 1
+    }
+    else {
+        let lastID = tm.tasks[tm.tasks.length-1].ID
+        id = lastID + 1
+    }
     let newTask = {
         "ID": id,
         "Name": assignedBy,
@@ -192,7 +209,13 @@ function display(){
         </div>
     </div>`
     fara.innerHTML += taskHTML
+    let fara = document.querySelector("#taskout")
+    fara.innerHTML =  ""
+    
+    for (i in tm.tasks){
+        let taskHTML = 
     }
+    
 } 
     
 // taskList = []
